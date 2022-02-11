@@ -1,13 +1,16 @@
 const smartGarbage = (trash, bins) => {
   switch (trash) {
     case 'waste':
-      bins['waste']++
+      bins.waste++
       break;
     case 'recycling':
-      bins['recycling']++
+      bins.recycling++
       break;
     case 'compost':
-      bins['compost']++
+      bins.compost++
+      break;
+    case 'default':
+      console.log("Throw error");
       break;
   }
   return bins;
